@@ -25,17 +25,34 @@
 //obj2.practice();
 //obj2.func2();
 
-var myObj = {
-  func: function () {
-    console.log("1", this); //func
+// var myObj = {
+//   func: () => {
+//     // console.log("1", this); //func
 
-    (function () {
-      console.log("2", this); //window
-    })();
+//     (() => {
+//       console.log("2", this); //window
+//     })();
 
-    (() => {
-      console.log("3", this); //func
-    })();
-  },
-};
-myObj.func();
+//     // (() => {
+//     //   console.log("3", this); //func
+//     // })();
+//   },
+// };
+// myObj.func();
+
+// const obj3 = {
+//   name: "nazim",
+//   skills: [1, 2, 3],
+//   func: () => {
+//     return () => {
+//       console.log("2", this);
+//     };
+//   },
+
+//   // practice() {
+//   //   this.skills.forEach(function (skill) {
+//   //     console.log("1", this);
+//   //   });
+//   // },
+// };
+// obj3.func()();
